@@ -10,7 +10,13 @@ public class MooseLook : MonoBehaviour
     public float minimumVert = -45.0f; 
     public float maximumVert = 45.0f; 
 
-    private float _rotationX = 0; 
+    private float _rotationX = 0;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
+    }
 
 
     // Update is called once per frame
